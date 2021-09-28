@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import { Button, TextField } from '@material-ui/core';
+import Calculator from './forma.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="container" className="down">
+      <Calculator/>
+    {/* <TextField onChange = {this.handleChange} id="outlined-basic" label="Calculator" variant="outlined" /> */}
+    {/* <Button onClick={calculate} color="primary">Calculate</Button> */}
     </div>
   );
 }
